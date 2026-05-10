@@ -1,0 +1,9 @@
+2025-12-08 19:12:51.538554-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESPOSNSAVEL" not found; SQL statement:
+Select ag.agendamento_id, ag.data_prevista, r.nome AS Nome_Responsavel, a.nome AS Nome_Animal
+From agendamentos ag
+inner join resposnsavel r ON ag.responsavel = r.responsavel_id
+inner join animais a ON ag.animal = a.animal_id [42102-232]
+2025-12-08 19:20:20.702689-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITENS_MANEJO_ID" not found; SQL statement:
+select * from ITENS_MANEJO_ID [42102-232]
